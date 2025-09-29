@@ -1,14 +1,32 @@
+import { Header } from "./componentes/Cabecalho/Cabecalho";
+import { CampoTexto } from "./componentes/CampoTexto/CampoTexto";
 import { Card } from "./componentes/Card/Card";
 import { Estilos } from "./componentes/EstilosGlobais/Estilos";
 import { ProvedorTema } from "./componentes/ProvedorTema/ProvedorTema";
+import { Rodape } from "./componentes/Rodape/Rodape";
+import { Tipografia } from "./componentes/Tipografia/Tipografia";
 
 function App() {
   return (
     <ProvedorTema>
       <Estilos />
+      <Header />
       <Card>
-        <h1>Freelando</h1>
+        <Tipografia
+          variante="h1"
+          componente="h1"
+        >
+          Crie seu cadastro
+        </Tipografia>
+        <Tipografia 
+          variante="body1Regular" 
+          componente="body1Regular"
+        >
+          Crie seu perfil gratuitamente para começar a trabalhar com os melhores freelancers. Em seguida, você poderá dar mais detalhes sobre suas demandas e sobre sua forma de trabalho. 
+        </Tipografia>
+        <CampoTexto titulo="Nome Completo"></CampoTexto>
       </Card>
+      <Rodape />
     </ProvedorTema>
   );
 }
