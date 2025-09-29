@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 
+//Estilos do componente
 const DivEstilizada = styled.div`
     padding: ${props => props.theme.espacamentos.l};
     background: ${props => props.theme.cores.secundarias.a};
